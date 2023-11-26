@@ -11,11 +11,13 @@ const page = () => {
 				<div className="m-auto pt-6 lg:pt-[92px] pb-[132px] px-4">
 					<div className="max-w-[980px] flex flex-col lg:flex-row justify-center lg:justify-between items-center m-auto">
 						<div className="lg:pr-12">
-							<div className="text-4xl text-[#0866ff] font-extrabold py-2">
+							<div className="text-4xl text-[#0866ff] text-center lg:text-left font-extrabold py-2">
 								facebook
 							</div>
-							<div className="text-4xl font-normal pt-2">Recent Logins</div>
-							<div className="text-sm leading-8 text-gray-800 pb-6">
+							<div className="text-4xl font-normal pt-2 text-center lg:text-left">
+								Recent Logins
+							</div>
+							<div className="text-sm leading-8 text-center lg:text-left text-gray-800 pb-6">
 								Click your picture or add an account
 							</div>
 							<div className="flex gap-4">
