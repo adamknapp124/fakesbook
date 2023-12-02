@@ -22,6 +22,7 @@ import settingsIcon from '@/public/images/settings.png';
 import helpIcon from '@/public/images/help.png';
 import moonIcon from '@/public/images/moon.png';
 import feedbackIcon from '@/public/images/feedback.png';
+import { signOut } from 'next-auth/react';
 
 const Navbar = () => {
 	const [desktopNav, setDesktopNav] = useState(false);
@@ -247,7 +248,7 @@ const Navbar = () => {
 												height={15}
 											/>
 										</div>
-										<div>Logout</div>
+										<div onClick={() => signOut()}>Logout</div>
 									</li>
 								</ul>
 							</div>
