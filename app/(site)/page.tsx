@@ -11,14 +11,11 @@ const Home = () => {
 			<div>
 				<Navbar />
 			</div>
-			<div className="flex justify-between max-w-[980px] m-auto">
-				<div className="hidden md:block">
-					<UserInfoPanel />
-				</div>
-				<div>
+			<div className="flex m-auto p-4">
+				<div className="w-full">
 					<PostReel />
 				</div>
-				<div className="hidden sm:block">
+				<div className="hidden sm:block border-2 w-2/5 max-w-[350px]">
 					<ChatsList />
 				</div>
 			</div>

@@ -13,11 +13,7 @@ const PostReel = () => {
 		}
 	}, [session?.data]);
 
-	return (
-		<div>
-			{name} - {email}
-		</div>
-	);
+	return <div className="border-2 flex"></div>;
 };
 
 export default PostReel;
