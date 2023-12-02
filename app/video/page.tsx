@@ -1,12 +1,7 @@
 import React from 'react';
-import Navbar from '../components/navbar/Navbar';
 
-const page = () => {
-	return (
-		<div>
-			<Navbar />
-		</div>
-	);
+const page = async () => {
+	return <div></div>;
 };
 
 export default page;

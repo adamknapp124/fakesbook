@@ -1,26 +1,27 @@
 import React from 'react';
 
-import Navbar from '../components/navbar/Navbar';
-import UserInfoPanel from './components/UserInfoPanel';
 import PostReel from './components/PostReel';
 import ChatsList from './components/ChatsList';
 
-const Home = () => {
+async function Home({ children }: { children: React.ReactNode }) {
 	return (
-		<div>
-			<div>
-				<Navbar />
-			</div>
-			<div className="flex m-auto p-4">
-				<div className="w-full">
-					<PostReel />
-				</div>
-				<div className="hidden sm:block border-2 w-2/5 max-w-[350px]">
-					<ChatsList />
+		<div className="h-full border-2">
+			<div className="w-full h-full m-auto">
+				<div className="flex justify-between m-auto p-4 h-full max-w-[1200px] gap-4">
+					<div className="flex m-auto w-full h-full max-w-[780px] min-w-[450px]">
+						<div className="w-full">
+							<PostReel />
+						</div>
+					</div>
+					<div className="hidden md-lg:flex min-w-[350px]">
+						<div className="hidden md-lg:flex w-full">
+							<ChatsList />
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
 	);
-};
+}
 
 export default Home;
